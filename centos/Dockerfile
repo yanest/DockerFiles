@@ -14,6 +14,8 @@ RUN yum -y -q install passwd perl-JSON pwgen vim wget
 RUN yum -y -q install monit
 # install openssh-server
 RUN yum -y -q install openssh-server
+#install bash-completion
+RUN yum -y -q install bash-completion
 # Cleaining up.
 RUN yum clean all
 # Monit
