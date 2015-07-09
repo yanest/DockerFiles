@@ -1,2 +1,2 @@
-FROM eborass/apache-php
+FROM eboraas/apache-php
 
