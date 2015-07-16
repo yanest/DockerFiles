@@ -1,0 +1,17 @@
+mysql:
+  image: yanest/mysql
+  ports:
+    - "3306:3306"
+  volumes:
+    - /opt/data/mysql:/var/lib/mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=gopha
+  hostname: mydb.test.server1
+
+phpmyadmin:
+  image: yanest/phpmyadmin
+  ports:
+    - "1234:80"
+  links:
+    - mysql:mysql
+  hostname: phpmyadmin.test.server1
