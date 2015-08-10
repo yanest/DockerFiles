@@ -11,3 +11,4 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install gd
 RUN docker-php-ext-install pdo_mysql
 RUN docker-php-ext-install mysql
+RUN apt-get clean
